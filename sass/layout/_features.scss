@@ -1,0 +1,66 @@
+/* Секция Особенности  */
+
+.features h2 {
+  display: none;
+}
+
+.features h3 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.features p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+}
+
+.features .list {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    width: $tablet;
+    margin: -15px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+.features .item {
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 8 * 15px) / 4);
+  }
+
+  /*&:not(:last-child) {
+    @media screen and (max-width: calc($tablet-1px)) {
+      margin-bottom: 15px;
+    }
+  }*/
+}
+
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  height: 120px;
+  background-color: $works-button-color;
+  border-radius: 4px;
+}
+
+.features-svg {
+  width: 70px;
+  height: 70px;
+}
