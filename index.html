@@ -19,6 +19,19 @@
     <header>
       <nav class="container main-nav">
         <a href="./index.html" class="logo"> Web<span>Studio</span></a>
+        
+        <button type="button" class ="menu-button" 
+        aria-expanded="false" 
+        aria-controls="menu-container" 
+        data-menu-button>
+          <svg width=40px height=40px aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
+      
+    <div class="menu-container" id="menu-container" data-menu>
+
 
         <ul class="site-nav list">
           <li class="item">
@@ -34,7 +47,7 @@
           <li class="item">
             <address class="address">
               <a href="mailto:info@devstudio.com" class="contacts-nav-link">
-                <svg class="address-icon" width="15" height="20">
+                <svg class="address-icon" >
                   <use href="./images/sprite.svg#envelope"></use>
                 </svg>
                 info@devstudio.com</a
@@ -44,7 +57,7 @@
           <li class="item">
             <address class="address">
               <a href="tel:380961111111" class="contacts-nav-link">
-                <svg class="address-icon" width="15" height="20">
+                <svg class="address-icon" >
                   <use href="./images/sprite.svg#smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -52,6 +65,7 @@
             </address>
           </li>
         </ul>
+        </div>
       </nav>
     </header>
 
@@ -437,7 +451,7 @@
       </section>
     </main>
 
-    <!-- Футер -->
+    <!-- Футер 
     <footer>
       <section class="container footer">
         <div>
@@ -532,6 +546,7 @@
         </div>
       </section>
     </footer>
+    -->
 
     <!--       Фон при открытом модальном окне  -->
     
@@ -585,6 +600,7 @@
       
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script>
       (() => {
         document

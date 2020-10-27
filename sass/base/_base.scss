@@ -16,7 +16,13 @@ body {
   font-family: $main-font;
   font-style: normal;
   font-weight: normal;
-  padding-top: 80px;
+
+  @media screen and (max-width: $tablet1) {
+    padding-top: 60px;
+  }
+  @media screen and (min-width: $tablet) {
+    padding-top: 80px;
+  }
 }
 
 a {

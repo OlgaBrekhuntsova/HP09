@@ -1,4 +1,11 @@
 /* Секция Деятельность   */
+
+.activities {
+  @media screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+
 .activities h3 {
   display: flex;
   width: 100%;
