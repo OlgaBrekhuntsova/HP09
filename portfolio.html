@@ -19,41 +19,48 @@
     <header>
       <nav class="container main-nav">
         <a href="./index.html" class="logo"> Web<span>Studio</span></a>
-
-        <ul class="site-nav list">
-          <li class="item">
-            <a href="./index.html" class="link">Студия</a>
-          </li>
-          <li class="item">
-            <a href="./portfolio.html" class="link current portfolio"
-              >Портфолио</a
-            >
-          </li>
-          <li class="item"><a href="" class="link">Контакты</a></li>
-        </ul>
-
-        <ul class="contacts-nav list">
-          <li class="item">
-            <address class="address">
-              <a href="mailto:info@devstudio.com" class="contacts-nav-link">
-                <svg class="address-icon" width="15" height="20">
-                  <use href="./images/sprite.svg#envelope"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </address>
-          </li>
-          <li class="item">
-            <address class="address">
-              <a href="tel:380961111111" class="contacts-nav-link">
-                <svg class="address-icon" width="15" height="20">
-                  <use href="./images/sprite.svg#smartphone"></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </address>
-          </li>
-        </ul>
+    
+        <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+          <svg width=40px height=40px aria-label="Переключатель мобильного меню">
+            <use class="icon-cross" href="./images/sprite.svg#cross"></use>
+            <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+          </svg>
+        </button>
+    
+        <div class="menu-container" id="menu-container" data-menu>
+    
+    
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+    
+          <ul class="contacts-nav list">
+            <li class="item">
+              <address class="address">
+                <a href="mailto:info@devstudio.com" class="contacts-nav-link">
+                  <svg class="address-icon">
+                    <use href="./images/sprite.svg#envelope"></use>
+                  </svg>
+                  info@devstudio.com</a>
+              </address>
+            </li>
+            <li class="item">
+              <address class="address">
+                <a href="tel:380961111111" class="contacts-nav-link">
+                  <svg class="address-icon">
+                    <use href="./images/sprite.svg#smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11</a>
+              </address>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
@@ -84,7 +91,8 @@
           <li class="item">
             <a href="" class="examples-list-link">
               <div class="examples-list-image">
-                <img src="./images/work1.jpg" alt="Технокряк" width="370" />
+                <img srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x" 
+                class="examles-list-photo" src="./images/work1.jpg" alt="Технокряк"/>
                 <p class="examples-list-overlay">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -100,10 +108,11 @@
           <li class="item">
             <a href="" class="examples-list-link">
               <div class="examples-list-image">
-                <img
+                <img srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x" 
+                class="examles-list-photo"
                   src="./images/work2.jpg"
                   alt="Постер New Orlean vs Golden Star"
-                  width="370"
+                  
                 />
                 <p class="examples-list-overlay">
                   Технокряк это современная площадка распространения
@@ -120,10 +129,11 @@
           <li class="item">
             <a href="" class="examples-list-link">
               <div class="examples-list-image">
-                <img
+                <img srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x" 
+                class="examles-list-photo"
                   src="./images/work3.jpg"
                   alt="Ресторан Seafood"
-                  width="370"
+                  
                 />
                 <p class="examples-list-overlay">
                   Технокряк это современная площадка распространения
@@ -140,7 +150,8 @@
           <li class="item">
             <a href="" class="examples-list-link">
               <div class="examples-list-image">
-                <img src="./images/work4.jpg" alt="Проект Prime" width="370" />
+                <img srcset="./images/work4.jpg 1x, ./images/work4@2x.jpg 2x" 
+                class="examles-list-photo" src="./images/work4.jpg" alt="Проект Prime" />
                 <p class="examples-list-overlay">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -156,7 +167,8 @@
           <li class="item">
             <a href="" class="examples-list-link">
               <div class="examples-list-image">
-                <img src="./images/work5.jpg" alt="Проект Boxes" width="370" />
+                <img srcset="./images/work5.jpg 1x, ./images/work5@2x.jpg 2x"
+                class="examles-list-photo" src="./images/work5.jpg" alt="Проект Boxes" />
                 <p class="examples-list-overlay">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -172,10 +184,11 @@
           <li class="item">
             <a href="" class="examples-list-link">
               <div class="examples-list-image">
-                <img
+                <img srcset="./images/work6.jpg 1x, ./images/work6@2x.jpg 2x" 
+                class="examles-list-photo"
                   src="./images/work6.jpg"
                   alt="Inspiration has no Borders"
-                  width="370"
+                 
                 />
                 <p class="examples-list-overlay">
                   Технокряк это современная площадка распространения
@@ -192,10 +205,11 @@
           <li class="item">
             <a href="" class="examples-list-link">
               <div class="examples-list-image">
-                <img
+                <img srcset="./images/work7.jpg 1x, ./images/work7@2x.jpg 2x" 
+                class="examles-list-photo"
                   src="./images/work7.jpg"
                   alt="Издание Limited Edition"
-                  width="370"
+                 
                 />
                 <p class="examples-list-overlay">
                   Технокряк это современная площадка распространения
@@ -212,7 +226,8 @@
           <li class="item">
             <a href="" class="examples-list-link">
               <div class="examples-list-image">
-                <img src="./images/work8.jpg" alt="Проект LAB" width="370" />
+                <img srcset="./images/work8.jpg 1x, ./images/work8@2x.jpg 2x" 
+                class="examles-list-photo" src="./images/work8.jpg" alt="Проект LAB" />
                 <p class="examples-list-overlay">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -228,10 +243,11 @@
           <li class="item">
             <a href="" class="examples-list-link">
               <div class="examples-list-image">
-                <img
+                <img srcset="./images/work9.jpg 1x, ./images/work9@2x.jpg 2x" 
+                class="examles-list-photo"
                   src="./images/work9.jpg"
                   alt="Growing Business"
-                  width="370"
+                  
                 />
                 <p class="examples-list-overlay">
                   Технокряк это современная площадка распространения
@@ -321,5 +337,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

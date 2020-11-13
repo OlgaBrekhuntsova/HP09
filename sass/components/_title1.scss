@@ -9,4 +9,9 @@ h1 {
   text-transform: uppercase;
   color: $primary-white-color;
   margin-bottom: 30px;
+
+  @media screen and (max-width: $desktop1) {
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }

@@ -14,6 +14,15 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media screen and (min-width: $tablet) and (max-width: $desktop1) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (max-width: $tablet1) {
+    display: block;
+  }
+
   /* Футер Логотип */
   .logo {
     margin-bottom: 20px;
@@ -34,11 +43,33 @@ footer {
     }
   }
 }
+@media screen and (max-width: $desktop1) {
+  .footer div:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .footer .logo,
+  .contacts-footer .link,
+  .footer .watchword {
+    display: block;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer .form {
+    display: block;
+  }
+}
 
 /* Футер Контакты */
 
 .contacts-footer .item {
   margin-top: 9px;
+
+  @media screen and (max-width: $tablet1) {
+    margin-top: 8px;
+  }
 }
 
 .contacts-footer .link {
@@ -57,8 +88,10 @@ footer {
 
 /* Футер Форма подписка  */
 
-.footer .form {
-  display: flex;
+@media screen and (min-width: $desktop) {
+  .footer .form {
+    display: flex;
+  }
 }
 
 .footer .watchword {
@@ -76,9 +109,9 @@ footer {
 
 .email-input {
   display: flex;
-  width: 358px;
+  width: 100%;
   height: 50px;
-  margin-right: 12px;
+  margin-bottom: 20px;
   padding-left: 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -89,6 +122,16 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+
+  @media screen and (min-width: $mobile) and (max-width: $desktop1) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0px;
+  }
 }
 
 /*  Футер  Social Links  */

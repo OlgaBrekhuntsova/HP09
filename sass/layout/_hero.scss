@@ -1,21 +1,78 @@
 /*   Cекция HERO  */
 
 .overlay {
-  max-width: 1600px;
-  height: 600px;
+  max-width: 100%;
+  height: 400px;
+  padding-top: 118px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
   outline: 0;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 1px solid $title-text-color;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.8),
       rgba(47, 48, 58, 0.8)
     ),
-    url("../images/headerimg.jpg");
-  border: 1px solid $title-text-color;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    url("../images/hero-mobile.jpg");
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/hero-mobile@2x.jpg");
+  }
+
+  @media screen and (min-width: $mobile2) and (max-width: $tablet) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/hero-tablet.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/hero-tablet@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: $tablet2) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+      ),
+      url("../images/hero-desktop.jpg");
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+        ),
+        url("../images/hero-desktop@2x.jpg");
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+  }
 }

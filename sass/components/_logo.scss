@@ -1,6 +1,6 @@
 /* Логотип Header  */
 .logo {
-  display: inline-flex;
+  display: inline-block;
   font-family: Raleway, sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -10,6 +10,7 @@
   color: $accent-color;
   text-decoration: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: max-content;
 
   span {
     color: $title-text-color;

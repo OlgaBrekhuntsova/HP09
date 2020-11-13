@@ -16,20 +16,11 @@
 }
 
 .team .list {
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    width: $tablet;
-    margin: -15px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: -15px;
 }
 
 .team .item {
@@ -40,7 +31,11 @@
   margin: 15px;
   padding-bottom: 24px;
 
-  @media screen and (min-width: $tablet) {
+  @media screen and (max-width: $tablet1) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop1) {
     width: calc((100% - 4 * 15px) / 2);
   }
 

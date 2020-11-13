@@ -17,41 +17,27 @@
 }
 
 .features .list {
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (min-width: $mobile) {
-    width: $mobile;
-  }
-
-  @media screen and (min-width: $tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    width: $tablet;
-    margin: -15px;
-  }
-  @media screen and (min-width: $desktop) {
-    width: $desktop;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  margin: -15px;
 }
 
 .features .item {
-  @media screen and (min-width: $tablet) {
+  margin: 15px;
+
+  @media screen and (max-width: $tablet1) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: $desktop1) {
     width: calc((100% - 4 * 15px) / 2);
-    margin: 15px;
   }
 
   @media screen and (min-width: $desktop) {
     width: calc((100% - 8 * 15px) / 4);
   }
-
-  /*&:not(:last-child) {
-    @media screen and (max-width: calc($tablet-1px)) {
-      margin-bottom: 15px;
-    }
-  }*/
 }
 
 .features-icon {
